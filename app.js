@@ -1,3 +1,4 @@
+/* disable eslint */
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
@@ -15,6 +16,7 @@ const userRouter = require('./routes/userRoute');
 const reviewRouter = require('./routes/reviewRoute');
 const viewRouter = require('./routes/viewRoutes');
 
+// Start Express app
 const app = express();
 
 app.set('view engine', 'pug');
